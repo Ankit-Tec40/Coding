@@ -1,0 +1,28 @@
+arr=[[1,0,0],[1,1,0],[0,0,1]]
+ans=0
+r=3
+c=3
+for i in range (r):
+    for j in range (c):
+        if arr[i][j]==1:
+            ld=arr[i][j-1] if(j>0) else -1
+            rd=arr[i][j+1] if(j<c-1) else -1
+            td=arr[i-1][j] if(i>0) else -1
+            dd=arr[i+1][j] if(i<r-1) else -1
+
+            print(arr[i][j],"-->",ld,rd,td,dd)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
